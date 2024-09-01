@@ -73,7 +73,7 @@ async function scrapeWeb(page) {
         console.log(baseUrl)
 
         const browser = await chromium.launch({
-            headless: false,  //  modo no visible
+            headless: true,  //  modo no visible
             slowMo: 5000      // Ralentizar las acciones
         });
 
